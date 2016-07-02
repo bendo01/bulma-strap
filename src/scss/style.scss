@@ -7,8 +7,37 @@
 $first-gradient: #691c39;
 $second-gradient: #b03060;
 
+.hero {
+  &.is-primary {
+    background: linear-gradient(to right, $first-gradient 0%, $second-gradient 100%);
+    @include mobile {
+      .nav-toggle {
+        background-color: linear-gradient(to right, $first-gradient 0%, $second-gradient 100%);
+      }
+      &:hover {
+        background-color: rgba($black, 0.1);
+      }
+      &.is-active {
+        span {
+          background: linear-gradient(to right, $first-gradient 0%, $second-gradient 100%);
+        }
+      }
+      .nav-menu {
+        background: linear-gradient(to right, $first-gradient 0%, $second-gradient 100%);
+        .nav-item {
+          border-top-color: rgba($black, 0.2);
+        }
+      }
+    }
+  }
+}
+
 .background-header {
   background: linear-gradient(to right, $first-gradient 0%, $second-gradient 100%);
+}
+
+.nav-background-header {
+  background: transparent;
 }
 
 #carbon {
