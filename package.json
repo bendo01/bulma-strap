@@ -1,6 +1,6 @@
 {
   "name": "bulma-strap",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "front-end framework for developing responsive, mobile first projects on the web using buma css framework",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
+    "babel-preset-es2015": "^6.9.0",
     "bootstrap": "^4.0.0-alpha.2",
     "browser-sync": "^2.12.10",
     "bulma": "^0.1.0",
@@ -60,7 +61,6 @@
     "postcss-reporter": "^1.3.3",
     "rucksack-css": "^0.8.6",
     "stylelint": "^6.6.0",
-    "stylelint-config-standard": "^9.0.0",
-    "stylus": "^0.54.5"
+    "stylelint-config-standard": "^9.0.0"
   }
 }

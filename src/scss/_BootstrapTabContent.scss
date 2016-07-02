@@ -1,0 +1,39 @@
+//overriding default style
+
+.tabs {
+  li {
+    &.is-active {
+      a {
+        border-bottom-color: $border;
+        color: $text;
+      }
+    }
+
+    a {
+      &.is-active {
+        border-bottom-color: $link;
+        color: $link;
+      }
+    }
+  }
+}
+
+.tab-content {
+  & > .tab-pane {
+    display: none;
+  }
+  & > .is-active {
+    display: inherit;
+  }
+}
+
+//
+// Dropdowns
+//
+
+.nav-tabs .dropdown-menu {
+  // Make dropdown border overlap tab border
+  margin-top: -1px;
+  // Remove the top rounded corners here since there is a hard edge above the menu
+  @include border-top-radius(0);
+}

@@ -1,0 +1,12 @@
+@import 'LocalFunctions';
+@import 'LocalMixins';
+@import 'LocalVariables';
+@import 'BootstrapDropdown';
+@import 'BootstrapTabContent';
+
+.navigation-tabs {
+  a {
+    border-bottom: 0;
+    justify-content: flex-start;
+  }
+}

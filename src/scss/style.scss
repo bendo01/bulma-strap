@@ -1,0 +1,19 @@
+@import 'LocalFunctions';
+@import 'LocalMixins';
+@import 'LocalVariables';
+@import 'font-awesome';
+@import 'bulma';
+
+$first-gradient: #691c39;
+$second-gradient: #b03060;
+
+.background-header {
+  background: linear-gradient(to right, $first-gradient 0%, $second-gradient 100%);
+}
+
+#carbon {
+  max-width: 340px;
+  min-height: 130px;
+  min-width: 300px;
+  padding: 15px;
+}
